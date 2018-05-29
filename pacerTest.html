@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>20 Minute Activity</title>
+    <link rel="stylesheet" type="text/css" href="ideaStyles.css">
+</head>
+
+<body>
+
+    <article style="
+    position: fixed;
+    width: 100%;
+    top: 10%;">
+        <h2>
+            Do the pacer test from one end of the bus shelter to the other
+        </h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pP4eIcwgQbk" frameborder="1" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    </article>
+
+    <div class="cover">
+        <header>
+            <h1>HERE'S AN IDEA!</h1>
+        </header>
+
+        <div class="gap"></div>
+
+        <nav>
+            <ul>
+            <li class="buttonFloatLeft">
+                <p class="buttonLeft"><a href="index.html">Change Time</a></p>
+            </li>
+            <li class="buttonFloatRight">
+                <p class="buttonRight"> <a onClick="nextTwenty()">Another suggestion</a></p>
+            </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function nextTwenty() {
+        var page;
+        var pageNumber = Math.floor(Math.random() * 5);
+        console.log(pageNumber);
+        if (pageNumber == 0) {
+            page = "foreignSong.html";
+        } else if (pageNumber == 1) {
+            page = "barbershop.html";
+        } else if (pageNumber == 2) {
+            page = "makeWebsite.html";
+        } else if (pageNumber == 3) {
+            page = "manuscript.html";
+        } else if (page == 4) {
+            page = "shortStory.html";
+        }
+
+        window.open(page, "_self");
+    }
+
+</script>

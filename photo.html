@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>5 Minute Activity</title>
+    <link rel="stylesheet" type="text/css" href="ideaStyles.css">
+</head>
+
+<body>
+    <article style="display: block;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    top: 30%;">
+        <h2>
+            Take the most artsy photo you can of the bus stop
+            <br> Here are some photo editing apps:
+            <br>
+            <br>
+            <figure style="font-family: avenir;
+                        margin: 0px;
+                        text-align: center;
+                        font-weight: normal;
+                        font-size: 15px;
+                        color: slategrey;
+                        letter-spacing: 1px;
+                        padding-bottom: 2%;
+                        padding-left: 35%;
+                        padding-right: 7%;
+                        float: left;">
+                <a href="https://www.aviary.com/" target="_blank">
+                <img src="aviary.png" width="60px" height="60px">
+                </a>
+                <p>Aviary</p>
+            </figure>
+            <figure style="font-family: avenir;
+                        margin: 0px;
+                        text-align: center;
+                        font-weight: normal;
+                        font-size: 15px;
+                        color: slategrey;
+                        letter-spacing: 1px;
+                        padding-bottom: 2%;
+                        padding-left: 7%;
+                        padding-right: 35%;
+                        float: right;">
+                <a href="https://picsart.com/" target="_blank">
+                <img src="picsart.png" width="60px" height="60px">
+                    </a>
+                <p>PicsArt</p>
+            </figure>
+        </h2>
+    </article>
+
+    <div class="cover">
+        <header>
+            <h1>HERE'S AN IDEA!</h1>
+        </header>
+
+        <div class="gap"></div>
+
+        <nav>
+            <ul>
+            <li class="buttonFloatLeft">
+                <p class="buttonLeft"><a href="index.html">Change Time</a></p>
+            </li>
+            <li class="buttonFloatRight">
+                <p class="buttonRight"> <a onClick="nextFive()">Another suggestion</a></p>
+            </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function nextFive() {
+        var page;
+        var pageNumber = Math.floor(Math.random() * 4);
+        console.log(pageNumber);
+        if (pageNumber == 0) {
+            page = "bucket.html";
+        } else if (pageNumber == 1) {
+            page = "greetLanguage.html";
+        } else if (pageNumber == 2) {
+            page = "trash.html";
+        } else if (pageNumber == 3) {
+            page = "goals.html";
+        } else if (pageNumber == 4) {
+            page = "mindful.html";
+        } else {
+            page = "rock.html";
+        }
+
+        window.open(page, "_self");
+    }
+
+</script>

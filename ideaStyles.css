@@ -1,0 +1,134 @@
+html {
+    background-color: #fffef7;
+}
+
+
+@font-face {
+    font-family: "avenir";
+    src: url("Avenir.ttc") format("truetype");
+}
+
+@font-face {
+    font-family: "avenirH";
+    src: url("AEH.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+}
+
+.cover {
+    position: absolute;
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+header {
+    background-color: #ffd800;
+    width: 100%;
+    height: 75%;
+    pointer-events: none;
+}
+
+h1 {
+    font-family: avenirH;
+    letter-spacing: 15px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 60px;
+    color: white;
+    padding-top: 17.5%;
+    margin: 0px;
+}
+
+/*-----------------------------*/
+
+article {
+    position: fixed;
+    width: 100%;
+    top: 45%;
+}
+
+h2 {
+    font-family: avenir;
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    color: slategrey;
+    letter-spacing: 1px;
+    padding-bottom: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
+    z-index: 0;
+    margin: 0px;
+}
+
+/*-----------------------------*/
+
+iframe {
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+
+
+p {
+    margin: 0;
+}
+
+a {
+    color: darkslategrey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gap {
+    width: 100%;
+    padding-top: 53%;
+    pointer-events: none;
+}
+
+nav {
+    padding-bottom: 5%;
+}
+
+.buttonFloatLeft {
+    float: left;
+    width: 50%;
+}
+
+.buttonLeft {
+    text-align: left;
+    font-family: avenir;
+    color: cadetBue;
+    padding-left: 15%;
+}
+
+.buttonFloatRight {
+    float: right;
+    width: 50%;
+}
+
+.buttonRight {
+    text-align: right;
+    font-family: avenir;
+    color: cadetblue;
+    padding-right: 15%;
+}
+
+ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+/*-----------------------------*/
+
+.poem {
+    padding-left: 10%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    font-family: avenir;
+}

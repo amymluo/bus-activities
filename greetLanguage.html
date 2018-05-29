@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>5 Minute Activity</title>
+
+    <link rel="stylesheet" type="text/css" href="ideaStyles.css">
+</head>
+
+<body>
+
+    <article>
+
+        <h2>
+            Greet a neighbor in
+            <select id="languageList" onchange=changeLanguage()>
+                <option id="none"></option>
+                <option id="Spanish">Spanish</option>
+                <option id="French">French</option>            <option id="German">German</option>
+                <option id="Chinese">Chinese</option>
+            </select>
+            <br> Here's how to say it:
+            <p style="color: firebrick" id="greeting"></p>
+        </h2>
+    </article>
+    <div class="cover">
+        <header>
+            <h1>HERE'S AN IDEA!</h1>
+        </header>
+        <div class="gap"></div>
+        <nav>
+            <ul>
+                <li class="buttonFloatLeft">
+                    <p class="buttonLeft"><a href="index.html">Change Time</a></p>
+                </li>
+                <li class="buttonFloatRight">
+                    <p class="buttonRight"> <a onClick="nextFive()">Another suggestion</a></p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function changeLanguage() {
+        var languageList = document.getElementById("languageList");
+        var language = languageList.options[languageList.selectedIndex].id;
+
+        var message = ""
+
+        if (language === "Spanish") {
+            message = "Hola"
+        } else if (language === "French") {
+            message = "Bonjour "
+        } else if (language === "German") {
+            message = "Hallo "
+        } else if (language === "Chinese") {
+            message = "Ni Hao"
+        }
+
+        document.getElementById("greeting").innerHTML = message;
+    }
+
+    function nextFive() {
+        var page;
+        var pageNumber = Math.floor(Math.random() * 4);
+        console.log(pageNumber);
+        if (pageNumber == 0) {
+            page = "bucket.html";
+        } else if (pageNumber == 1) {
+            page = "photo.html";
+        } else if (pageNumber == 2) {
+            page = "trash.html";
+        } else if (pageNumber == 3) {
+            page = "goals.html";
+        } else if (pageNumber == 4) {
+            page = "mindful.html";
+        } else {
+            page = "rock.html";
+        }
+
+        window.open(page, "_self");
+    }
+
+</script>

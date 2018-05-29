@@ -1,0 +1,87 @@
+html {
+    background-color: #7d5aa5;
+}
+
+@font-face {
+    font-family: "avenir";
+    src: url("Avenir.ttc") format("truetype");
+}
+
+@font-face {
+    font-family: "avenirH";
+    src: url("AEH.ttf") format("truetype");
+}
+
+canvas {
+    display: block;
+    margin: auto;
+}
+
+header {
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+
+h1 {
+    font-family: avenirH;
+    text-align: center;
+    font-weight: normal;
+    font-size: 60px;
+    color: white;
+    letter-spacing: 10px;
+    margin: 2%;
+}
+
+h2 {
+    font-family: avenir;
+    text-align: center;
+    font-weight: normal;
+    font-size: 25px;
+    color: white;
+    padding-bottom: 2%;
+}
+
+nav {
+    padding-bottom: 3%;
+}
+
+ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited {
+    color: white;
+}
+
+.buttonFloatLeft {
+    float: left;
+    width: 50%;
+}
+
+.buttonLeft {
+    text-align: left;
+    font-family: avenir;
+    color: cadetBue;
+    padding-left: 20%;
+}
+
+.buttonFloatRight {
+    float: right;
+    width: 50%;
+}
+
+.buttonRight {
+    text-align: right;
+    font-family: avenir;
+    color: cadetblue;
+    padding-right: 20%;
+}

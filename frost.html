@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>10 Minute Activity</title>
+    <link rel="stylesheet" type="text/css" href="ideaStyles.css">
+</head>
+
+<body>
+    <article style="
+    display: block;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    top: 10%;">
+        <h2>
+            Recite the Robert Frost's poem "Road Less Taken" out loud
+        </h2>
+
+        <iframe src="RoadLessTaken.html" width=700 height=400></iframe>
+    </article>
+
+    <div class="cover">
+        <header>
+            <h1>HERE'S AN IDEA!</h1>
+        </header>
+        <div class="gap"></div>
+
+        <nav>
+            <ul>
+            <div class="buttonFloatLeft">
+                <p class="buttonLeft">
+                    <a href="index.html">Change Time</a>
+                </p>
+            </div>
+            <div class="buttonFloatRight">
+                <p class="buttonRight">
+                    <a onClick="nextTen()">Another suggestion</a> </p>
+            </div>
+            </ul>
+    </nav>
+ </div>
+</body>
+
+</html>
+
+<script>
+    function nextTen() {
+        var page;
+        var pageNumber = Math.floor(Math.random() * 5);
+        console.log(pageNumber);
+        if (pageNumber == 0) {
+            page = "petDog.html";
+        } else if (pageNumber == 1) {
+            page = "limerick.html";
+        } else if (pageNumber == 2) {
+            page = "browsePhone.html";
+        } else if (pageNumber == 3) {
+            page = "representative.html";
+        } else {
+            page = "favoriteRecipe.html";
+        }
+        window.open(page, "_self");
+    }
+
+</script>

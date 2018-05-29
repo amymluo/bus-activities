@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>10 Minute Activity</title>
+    <link rel="stylesheet" type="text/css" href="ideaStyles.css">
+</head>
+
+<body>
+    <article>
+        <h2>
+            Write a limerick about the bus stop
+        </h2>
+    </article>
+
+    <div class="cover">
+        <header>
+            <h1>HERE'S AN IDEA!</h1>
+        </header>
+
+        <div class="gap"></div>
+
+        <nav>
+            <ul>
+            <li class="buttonFloatLeft">
+                <p class="buttonLeft"><a href="index.html">Change Time</a></p>
+            </li>
+            <li class="buttonFloatRight">
+                <p class="buttonRight"> <a onClick="nextTen()">Another suggestion</a></p>
+            </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function nextTen() {
+        var page;
+        var pageNumber = Math.floor(Math.random() * 5);
+        console.log(pageNumber);
+        if (pageNumber == 0) {
+            page = "frost.html";
+        } else if (pageNumber == 1) {
+            page = "petDog.html";
+        } else if (pageNumber == 2) {
+            page = "browsePhone.html";
+        } else if (pageNumber == 3) {
+            page = "representative.html";
+        } else {
+            page = "favoriteRecipe.html";
+        }
+
+        window.open(page, "_self");
+    }
+
+</script>
